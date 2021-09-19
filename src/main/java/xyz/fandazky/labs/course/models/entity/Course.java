@@ -24,7 +24,7 @@ public class Course {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "image")
+    @Column(name = "image", length = 256)
     private String image;
 
     @Column(name = "lecture_count", length = 11)
@@ -42,7 +42,7 @@ public class Course {
     @Column(name = "discount", length = 11)
     private int discount;
 
-    @Column(name = "description", length = 100)
+    @Column(name = "description", length = 256)
     private String desc;
 
     @Column(name = "content")

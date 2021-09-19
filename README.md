@@ -19,3 +19,8 @@ INSERT INTO categories (icon, name)
 VALUES ('https://fandazky.xyz/categories/icon/software.png', 'IT & Software'),
 ('https://fandazky.xyz/categories/icon/finance.png', 'Finance & Accounting');
 `
+
+`
+INSERT INTO roles (name)
+VALUES ('ROLE_USER'),('ROLE_ADMIN')
+`
