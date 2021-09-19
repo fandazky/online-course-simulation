@@ -2,7 +2,7 @@
  * Dana.id
  * Copyright (c) 2017‐2021 All Rights Reserved.
  */
-package xyz.fandazky.labs.course.models.db;
+package xyz.fandazky.labs.course.models.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;

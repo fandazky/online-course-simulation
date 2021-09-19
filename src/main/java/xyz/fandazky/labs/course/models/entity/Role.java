@@ -1,4 +1,4 @@
-package xyz.fandazky.labs.course.models.db;
+package xyz.fandazky.labs.course.models.entity;
 
 import xyz.fandazky.labs.course.enums.RoleEnum;
 

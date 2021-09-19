@@ -13,3 +13,9 @@
 2. API Signin (POST /api/auth/)
 3. API Create course (POST /api/courses)
 4. API Search course (GET /api/course?keyword=$keyword)
+
+`
+INSERT INTO categories (icon, name)
+VALUES ('https://fandazky.xyz/categories/icon/software.png', 'IT & Software'),
+('https://fandazky.xyz/categories/icon/finance.png', 'Finance & Accounting');
+`

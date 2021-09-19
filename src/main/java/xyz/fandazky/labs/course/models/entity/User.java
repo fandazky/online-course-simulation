@@ -1,4 +1,4 @@
-package xyz.fandazky.labs.course.models.db;
+package xyz.fandazky.labs.course.models.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
