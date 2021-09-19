@@ -46,7 +46,7 @@ public class CourseController {
             List<CourseDto> dtos = courseService.search(keyword);
             return new ResponseEntity<Object>(dtos, HttpStatus.OK);
         } catch (Exception e) {
-
+            System.out.println(e.getMessage());
         }
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }

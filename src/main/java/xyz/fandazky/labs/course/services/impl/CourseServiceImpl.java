@@ -1,6 +1,7 @@
 package xyz.fandazky.labs.course.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import xyz.fandazky.labs.course.models.dto.CourseDto;
 import xyz.fandazky.labs.course.models.dto.SearchDto;
@@ -34,6 +35,7 @@ public class CourseServiceImpl implements CourseService {
     }
 
     @Override
+    @Cacheable(value = "courseCache")
     public List<CourseDto> search(String keyword) {
         return courseRepository.search("%" + keyword + "%");
     }

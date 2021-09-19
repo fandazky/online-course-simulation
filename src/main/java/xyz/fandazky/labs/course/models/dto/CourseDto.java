@@ -1,8 +1,9 @@
 package xyz.fandazky.labs.course.models.dto;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class CourseDto {
+public class CourseDto implements Serializable {
 
 	private int id;
 
