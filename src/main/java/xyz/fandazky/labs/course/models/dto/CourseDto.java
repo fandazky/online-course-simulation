@@ -10,8 +10,6 @@ public class CourseDto {
 
 	private String image;
 
-	private int lectureCount;
-
 	private int hourCount;
 
 	private int viewCount;
@@ -31,40 +29,11 @@ public class CourseDto {
 	public CourseDto() {
 
 	}
-
-	public CourseDto(
-			int id, 
-			String title, 
-			String image, 
-			int lectureCount, 
-			int hourCount, 
-			int viewCount, 
-			double price,
-			String desc, 
-			String content, 
-			int cateId, 
-			Date lastUpdate,
-			String cateName) {
-		super();
-		this.id = id;
-		this.title = title;
-		this.image = image;
-		this.lectureCount = lectureCount;
-		this.hourCount = hourCount;
-		this.viewCount = viewCount;
-		this.price = price;
-		this.description = desc;
-		this.content = content;
-		this.categoryId = cateId;
-		this.lastUpdate = lastUpdate;
-		this.category = cateName;
-	}
 	
 	public CourseDto(
 			int id, 
 			String title, 
-			String image, 
-			int lectureCount, 
+			String image,
 			int hourCount, 
 			int viewCount, 
 			double price,
@@ -74,7 +43,6 @@ public class CourseDto {
 		this.id = id;
 		this.title = title;
 		this.image = image;
-		this.lectureCount = lectureCount;
 		this.hourCount = hourCount;
 		this.viewCount = viewCount;
 		this.price = price;
@@ -106,22 +74,6 @@ public class CourseDto {
 		this.categoryId = cateId;
 		this.lastUpdate = lastUpdate;
 		this.category = cateName;
-	}
-	
-	public CourseDto(int id, String title, String image, int lectureCount, int hourCount, int viewCount, double price,
-                     String desc, String content, int cateId, Date lastUpdate) {
-		super();
-		this.id = id;
-		this.title = title;
-		this.image = image;
-		this.lectureCount = lectureCount;
-		this.hourCount = hourCount;
-		this.viewCount = viewCount;
-		this.price = price;
-		this.description = desc;
-		this.content = content;
-		this.categoryId = cateId;
-		this.lastUpdate = lastUpdate;
 	}
 
 	public CourseDto(
@@ -170,14 +122,6 @@ public class CourseDto {
 
 	public void setImage(String image) {
 		this.image = image;
-	}
-
-	public int getLectureCount() {
-		return lectureCount;
-	}
-
-	public void setLectureCount(int lectureCount) {
-		this.lectureCount = lectureCount;
 	}
 
 	public int getHourCount() {

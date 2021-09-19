@@ -9,5 +9,7 @@ public interface CourseService {
 
     int addCourse(CourseDto courseDto);
 
+    List<CourseDto> search(String keyword);
+
     List<CourseDto> search(SearchDto searchDto);
 }

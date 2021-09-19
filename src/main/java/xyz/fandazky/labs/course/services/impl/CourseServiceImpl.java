@@ -30,12 +30,16 @@ public class CourseServiceImpl implements CourseService {
         course.setCateId(courseDto.getCategoryId());
         course.setLastUpdate(new Date());
 
-        int id = courseRepository.saveAndFlush(course).getId();
-        return id;
+        return courseRepository.saveAndFlush(course).getId();
+    }
+
+    @Override
+    public List<CourseDto> search(String keyword) {
+        return courseRepository.search("%" + keyword + "%");
     }
 
     @Override
     public List<CourseDto> search(SearchDto searchDto) {
-        return null;
+        return courseRepository.searchCourse(searchDto);
     }
 }
